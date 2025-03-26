@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <h1>QR Code Generator</h1>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Форма для ввода ссылки -->
+        <form id="qrForm">
+            <label for="linkInput">Введите ссылку:</label>
+            <input type="text" id="linkInput" placeholder="https://www.example.com" required>
+            <button type="submit">Сгенерировать QR-код</button>
+        </form>
+
+        <!-- Область отображения QR-кода -->
+        <div id="qrCodeContainer">
+            <canvas id="qrCanvas"></canvas>
+            <p id="qrText">QR-код будет здесь</p>
+        </div>
+    </main>
+
+    <!-- Подключение библиотеки QRCode.js -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
